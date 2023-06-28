@@ -1,0 +1,45 @@
+.editor-box {
+    margin-bottom: 20px;
+  }
+  
+  .editor-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    z-index: 1;
+    display: none;
+  }
+  
+  .dropdown-menu.show {
+    display: block;
+  }
+  
+  .form-check-label {
+    margin-left: 5px;
+  }
+  
+  .input-box {
+    margin-top: 10px;
+  }
+  
+  .output-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+  }
+  
+  .output-result {
+    white-space: pre-wrap;
+  }
+  

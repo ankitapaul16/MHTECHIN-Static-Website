@@ -1,0 +1,21 @@
+body {
+  background-image: url('../assets/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.home-text {
+  color: white;
+  text-align: center;
+  padding-top: 280px;
+}
+
+.footer-container {
+  text-align: center;
+  color: white;
+  padding-top: 200px;
+}
