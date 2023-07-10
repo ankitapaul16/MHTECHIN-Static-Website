@@ -2,12 +2,11 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  width: 100%;
+  max-width: 1500px;
   overflow: hidden;
-  margin:0;
-  Padding:0;
-  margin-left: 0px;
-  padding-left: 0px;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .navbar {
@@ -48,12 +47,12 @@
 .dropdown-option {
   align-items: center;
   color: black;
-  padding: 12px 16px;
+  padding: 3px 5px;
   text-decoration: none;
   display: inline-block; /* Display options in a line */
   cursor: pointer;
   justify-content: center;
-  margin-right: 8px; /* Add some spacing between options */
+  margin-right: 5px; /* Add some spacing between options */
 }
 
 
@@ -127,8 +126,17 @@ pre {
 .code-input {
   font-size: 16px; /* Increase the font size */
   height: 245px; /* Increase the height of the code input area */
-  width: 1270px;
+  width: 1230px;
   padding: 10px;
   background-color: #f5f5f5;
   border: 1px solid #ddd;
+}
+
+body {
+  margin: 0px;
+  padding: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 0px;
 }

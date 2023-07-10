@@ -15,6 +15,8 @@ import './components/navbar.css';
 import Codeboard from './components/Codeboard';
 import CrackChampCompetition from './components/CrackChamp Competition';
 import CrackChampLeaderboard from './components/CrackChamp Leaderboard';
+import SignupForm from './components/SignupForm';
+import CompetitionPage from './components/CompetitionPage';
 
 //Dropdown function
 const App = () => {
@@ -175,6 +177,8 @@ const App = () => {
           <Route path="/codeboard" element={<Codeboard />} />
           <Route path="/crackchamp/competition" element={<CrackChampCompetition />} />
           <Route path="/crackchamp/leaderboard" element={<CrackChampLeaderboard />} />
+          <Route path="/signup" element={<SignupForm />} />
+          <Route path="/competition" element={<CompetitionPage />} /> 
         </Routes>
       </div>
     </Router>
