@@ -1,12 +1,13 @@
-// LoginForm.js
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'; // Import the necessary hook from react-router-dom
 import './LoginForm.css';
 
 const LoginForm = () => {
+  // Get the navigate function from the useNavigate hook
   const navigate = useNavigate();
-
+  // Function to handle the "Sign Up" button click
   const handleSignUpClick = () => {
+    // Redirect to the sign-up page when "Sign Up" button is clicked
     navigate('/signup');
   };
 
@@ -40,6 +41,7 @@ const LoginForm = () => {
             </form>
           </div>
           <div className="card-footer">
+            {/* "Sign Up" button triggers the handleSignUpClick function */}
             <div className="d-flex justify-content-center links">
               Don't have an account? <button className="btn-link" onClick={handleSignUpClick}>Sign Up</button>
             </div>

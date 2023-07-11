@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 
 const SignupForm = () => {
+  // State variable to store form data
   const [formData, setFormData] = useState({
     username: '',
     email: '',
     password: '',
   });
-
+// Function to handle input field changes
   const handleChange = (e) => {
+    // Update the corresponding form field in the state
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
+// Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     // Perform signup logic or API call here
