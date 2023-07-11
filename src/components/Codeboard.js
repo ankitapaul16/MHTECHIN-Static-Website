@@ -2,16 +2,17 @@ import React, { useState } from 'react';
 import './Codeboard.css';
 
 const Codeboard = () => {
+  // State variables for input, output, code, and selected language
   const [showInput, setShowInput] = useState(false);
   const [inputValue, setInputValue] = useState('');
   const [outputValue, setOutputValue] = useState('');
   const [codeInputValue, setCodeInputValue] = useState('');
   const [selectedLanguage, setSelectedLanguage] = useState('Language');
-
+// Event handler for input change
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
   };
-
+// Event handler for running the code
   const handleRunCode = () => {
     // Execute code logic here
     // You can use the inputValue state to get the input value
@@ -19,15 +20,15 @@ const Codeboard = () => {
     // For demonstration purposes, let's assume the output is "Hello, World!"
     setOutputValue('Hello, World!');
   };
-
+// Event handler for toggling the input box
   const handleToggleInput = () => {
     setShowInput(!showInput);
   };
-
+// Event handler for code input change
   const handleCodeInputChange = (event) => {
     setCodeInputValue(event.target.value);
   };
-
+// Event handler for selecting a language
   const handleLanguageSelect = (language) => {
     setSelectedLanguage(language);
   };
