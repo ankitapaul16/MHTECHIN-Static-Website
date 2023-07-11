@@ -5,6 +5,7 @@ const Navbar = () => {
   return (
     <nav>
       <ul>
+        {/* Navigation links for different programming languages */}
         <li><Link to="/c++">C++</Link></li>
         <li><Link to="/c">C</Link></li>
         <li><Link to="/python">Python</Link></li>

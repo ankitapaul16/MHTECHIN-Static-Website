@@ -27,29 +27,30 @@ const App = () => {
   useEffect(() => {
     // Closes dropdown when clicked outside
     const handleOutsideClick = (event) => {
+      // Check if the clicked element is outside the dropdowns
       if (
-        event.target.closest('.dropdown-1') === null &&
-        event.target.closest('.dropdown-2') === null
+        event.target.closest('.dropdown-1') === null && // Check if clicked element is not within dropdown-1
+        event.target.closest('.dropdown-2') === null // Check if clicked element is not within dropdown-2
       ) {
-        setDropdownOpen1(false);
-        setDropdownOpen2(false);
+        setDropdownOpen1(false); // Close dropdown-1
+        setDropdownOpen2(false); // Close dropdown-2
       }
     };
 
-    document.addEventListener('click', handleOutsideClick);
+    document.addEventListener('click', handleOutsideClick); // Add click event listener to the entire document
 
     return () => {
-      document.removeEventListener('click', handleOutsideClick);
+      document.removeEventListener('click', handleOutsideClick); // Remove the click event listener when the component is unmounted
     };
   }, []);
 
 
   const toggleDropdown1 = () => {
-    setDropdownOpen1(!isDropdownOpen1);
+    setDropdownOpen1(!isDropdownOpen1); // Toggle the state of dropdown-1 (open/close)
   };
 
   const toggleDropdown2 = () => {
-    setDropdownOpen2(!isDropdownOpen2);
+    setDropdownOpen2(!isDropdownOpen2); // Toggle the state of dropdown-2 (open/close)
   };
 
   const handleOptionClick1 = () => { 
@@ -166,6 +167,7 @@ const App = () => {
        {/* Content */}
       <div className="container">
         <Routes>
+          {/* Routes configuration */}
           <Route path="/" element={<Home />} />
           <Route path="/C" element={<C />} />
           <Route path="/C++" element={<Cpp />} />
